@@ -1,0 +1,5 @@
+Green - #7AC673
+red - #ED7161
+Purple left - #7D6599
+Purple right - #556080
+Blude back - #8697CB

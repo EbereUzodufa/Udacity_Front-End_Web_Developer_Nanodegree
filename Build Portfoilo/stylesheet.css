@@ -1,7 +1,203 @@
-#logo{
-	height: 20px;
-	width: 20px;
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  	font-family: 'zocial', sans-serif;
+  	color: #7ac673;
+	margin: 20px;
 }
-#textCap{
+
+#logo{
+	height: 75px;
+	width: 75px;
+	max-width: 100%;
+	margin: 5px;
+	/*Allows the picture to allow another element*/
+	float: left;
+	vertical-align: middle;
+}
+
+body{
+	width: 800px;
+	margin:0px auto;
+	display: block;
+	/*Flex allows the elements to wrap*/
+	display: flex;
+  	flex-direction: column;
+}
+
+div#name{
+	max-width: 100%;
+	margin: 5px;
+}
+
+img#basicPicture{
+	width: 100%;
+	margin: 15px auto;
+}
+
+#header{
+	margin: 15px 0;
+	width: 100%;
+}
+
+#myName, #ninja{
 	text-transform: uppercase;
+}
+
+#imageFeaturedWork{
+	height: 75px;
+	width: 75px;
+	/*Miss this and your image cannot center*/
+  	margin-left: auto;
+  	margin-right: auto;
+  	display: block;
+}
+
+h1,h4{
+	margin:0px;
+	text-align: right;
+}
+
+h1,h2,h4{
+	font-family: 'Roboto', sans-serif;
+}
+
+h2, figcaption, p#imgURL{
+	text-align: center;
+	margin:5px; 
+}
+
+h1{
+	color: #7ac673;
+}
+
+h2{
+	color: #7c6599;
+	font-size: 30px;
+	margin: 10px;
+}
+
+h4{
+	color: #ED7161;
+}
+
+figcaption{
+	font-family: 'Exo 2', sans-serif;
+	color: #ED7161;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+p#imgURL, a{
+	max-width: 100%;
+	overflow-wrap: break-word;
+	font-family: 'Ubuntu', sans-serif;
+	color: #8697cb;
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+div#featuredWork{
+	/*max-width: 850px;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*Flex allows the elements to wrap*/
+	display: flex;
+  	/*flex-direction: column;*/
+  	flex-wrap: wrap;
+}
+
+a:hover{
+	color: #7ac673;
+}
+
+figure#figFeaturedWork{
+	/*float: left;*/
+	width: calc((100% - 25px)/3);
+	margin-right: 10px;
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+figure#figFeaturedWork:last-of-type{
+	margin-right: 0px;
+}
+
+footer{
+	background-color: #7ac673;
+	width: 100%;
+	text-align: center;
+}
+
+p#footerText{
+	margin:5px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	color: #fff;
+}
+
+figure#figFeaturedWork:hover{
+	/*padding: 2px;*/
+	border-bottom: 5px solid #7ac673;
+	background-color:  #eee;
+}
+
+div#socialIcon{
+	/*width: 100%;
+	margin: 2px auto;
+	display: flex;
+	flex-wrap: wrap;*/
+	/*margin: 15px;*/
+	background-color: #fff;
+	padding: 10px;
+}
+
+/*.social{
+	
+}*/
+
+a:hover [class*="zocial-"]:before {
+	color: #000;
+}
+
+/*.social:last-of-type{
+
+}*/
+
+@media screen and (max-width: 799px) {
+	body{
+		width: 100%;
+	}
+
+	#logo{
+		height: 55px;
+		width: 55px;
+	}
+
+	#imageFeaturedWork{
+	height: 45px;
+	width: 45px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	figure#figFeaturedWork{
+		width: 100%;
+		margin: 10px;
+	}
+
+	h1{
+		font-size: 1.5em;
+	}
+
+	#logo{
+		height: 45px;
+		width: 45px;
+		margin: 10px;
+	}
 }
