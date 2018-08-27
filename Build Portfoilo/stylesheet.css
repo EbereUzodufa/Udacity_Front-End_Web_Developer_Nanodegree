@@ -1,20 +1,15 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-
-/* zocial */
-[class*="zocial-"]:before {
-  	font-family: 'zocial', sans-serif;
-  	color: #7ac673;
-	margin: 20px;
+a:hover{
+	color: #7ac673;
 }
 
-#logo{
-	height: 75px;
-	width: 75px;
-	max-width: 100%;
-	margin: 5px;
-	/*Allows the picture to allow another element*/
-	float: left;
-	vertical-align: middle;
+a.fa, .fa {
+    font-size: 50px;
+    color: #7ac673;
+    margin: 10px;
+}
+
+a.fa:hover{
+	color: #ED7161;
 }
 
 body{
@@ -26,46 +21,72 @@ body{
   	flex-direction: column;
 }
 
+div#featuredWork{
+	/*max-width: 850px;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*Flex allows the elements to wrap*/
+	display: flex;
+  	/*flex-direction: column;*/
+  	flex-wrap: wrap;
+}
+
 div#name{
 	max-width: 100%;
 	margin: 5px;
 }
 
-img#basicPicture{
-	width: 100%;
-	margin: 15px auto;
+div#socialIcon{
+	/*width: 100%;
+	margin: 2px auto;
+	display: flex;
+	flex-wrap: wrap;*/
+	/*margin: 15px;*/
+	background-color: #fff;
+	padding: 10px;
 }
 
-#header{
-	margin: 15px 0;
-	width: 100%;
-}
-
-#myName, #ninja{
+figcaption{
+	font-family: 'Exo 2', sans-serif;
+	color: #ED7161;
+	font-size: 20px;
 	text-transform: uppercase;
 }
 
-#imageFeaturedWork{
-	height: 75px;
-	width: 75px;
-	/*Miss this and your image cannot center*/
-  	margin-left: auto;
-  	margin-right: auto;
-  	display: block;
+figure#figFeaturedWork{
+	/*float: left;*/
+	width: calc((100% - 25px)/3);
+	margin-right: 10px;
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+figure#figFeaturedWork:hover{
+	/*padding: 2px;*/
+	border-bottom: 3px solid #7ac673;
+	background-color:  #eee;
+}
+
+figure#figFeaturedWork:last-of-type{
+	margin-right: 0px;
+}
+
+figure#figFeaturedWork:hover{
+	/*padding: 2px;*/
+	border-bottom: 3px solid #7ac673;
+	background-color:  #eee;
+}
+
+footer{
+	background-color: #7ac673;
+	width: 100%;
+	text-align: center;
 }
 
 h1,h4{
 	margin:0px;
 	text-align: right;
-}
-
-h1,h2,h4{
-	font-family: 'Roboto', sans-serif;
-}
-
-h2, figcaption, p#imgURL{
-	text-align: center;
-	margin:5px; 
 }
 
 h1{
@@ -82,11 +103,29 @@ h4{
 	color: #ED7161;
 }
 
-figcaption{
-	font-family: 'Exo 2', sans-serif;
-	color: #ED7161;
-	font-size: 20px;
-	text-transform: uppercase;
+h1,h2,h4{
+	font-family: 'Roboto', sans-serif;
+}
+
+h2, figcaption, p#imgURL{
+	text-align: center;
+	margin:5px; 
+}
+
+img {
+  max-width: 100%;
+}
+
+img#basicPicture{
+	width: 100%;
+	margin: 15px auto;
+}
+
+p#footerText{
+	margin:5px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	color: #fff;
 }
 
 p#imgURL, a{
@@ -97,77 +136,33 @@ p#imgURL, a{
 	text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
-
-div#featuredWork{
-	/*max-width: 850px;*/
-	margin-left: auto;
-	margin-right: auto;
-	/*Flex allows the elements to wrap*/
-	display: flex;
-  	/*flex-direction: column;*/
-  	flex-wrap: wrap;
-}
-
-a:hover{
-	color: #7ac673;
-}
-
-figure#figFeaturedWork{
-	/*float: left;*/
-	width: calc((100% - 25px)/3);
-	margin-right: 10px;
-	margin-left: 0px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-figure#figFeaturedWork:last-of-type{
-	margin-right: 0px;
-}
-
-footer{
-	background-color: #7ac673;
+#header{
+	margin: 15px 0;
 	width: 100%;
-	text-align: center;
 }
 
-p#footerText{
-	margin:5px;
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	color: #fff;
+#imageFeaturedWork{
+	height: 75px;
+	width: 75px;
+	/*Miss this and your image cannot center*/
+  	margin-left: auto;
+  	margin-right: auto;
+  	display: block;
 }
 
-figure#figFeaturedWork:hover{
-	/*padding: 2px;*/
-	border-bottom: 5px solid #7ac673;
-	background-color:  #eee;
+#logo{
+	height: 75px;
+	width: 75px;
+	max-width: 100%;
+	margin: 5px;
+	/*Allows the picture to allow another element*/
+	float: left;
+	vertical-align: middle;
 }
 
-div#socialIcon{
-	/*width: 100%;
-	margin: 2px auto;
-	display: flex;
-	flex-wrap: wrap;*/
-	/*margin: 15px;*/
-	background-color: #fff;
-	padding: 10px;
+#myName, #ninja{
+	text-transform: uppercase;
 }
-
-/*.social{
-	
-}*/
-
-a:hover [class*="zocial-"]:before {
-	color: #000;
-}
-
-/*.social:last-of-type{
-
-}*/
 
 @media screen and (max-width: 799px) {
 	body{
@@ -201,3 +196,42 @@ a:hover [class*="zocial-"]:before {
 		margin: 10px;
 	}
 }
+
+/*.social{
+	
+}*/
+
+/*a:hover [class*="zocial-"]:before {
+	color: #000;
+}*/
+
+/*.social:last-of-type{
+
+}*/
+
+/*@import url(http://weloveiconfonts.com/api/?family=zocial);*/
+
+/* zocial */
+/*[class*="zocial-"]:before {
+  	font-family: 'zocial', sans-serif;
+  	color: #7ac673;
+	margin: 20px;
+}*/
+
+/*.icons{
+  	font-size: 70px;
+  	color: #fff;
+	margin: 20px;
+}*/
+
+/*[class*="fa fa-"]:before {
+  	font-size: 200px;
+  	color: #f7f683;
+	margin: 20px;
+}*/
+
+/*i.fa {
+    font-size: 50px;
+    color: #f7f683;
+    margin: 5px;
+}*/
